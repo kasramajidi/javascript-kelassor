@@ -33,3 +33,13 @@ inputTime(50)
 
 // تمرین 3
 
+function rangeInput (add, range1, range2){
+    if (add >= range1 && add <= range2){
+        return console.log("این عدد در این بازه قرار دارد")
+    } else {
+        return console.log("این عدد در این بازه قرار ندارد")
+    }
+}
+
+rangeInput(15, 10, 20)
+
