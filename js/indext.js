@@ -12,3 +12,15 @@ function inputNumber(num){
 
 inputNumber(17)
 
+// تمرین 2
+
+function inputTime (num) {
+    if (num <= 12){
+        return console.log(num + " AM");
+    } else if (num > 12 && num <= 24){
+        const time = num - 12;
+        return console.log( time + " PM");
+    }
+}
+
+inputTime(13)
