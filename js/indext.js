@@ -96,3 +96,13 @@ function testStringVowels(kalmeh){
 }
 
 console.log(testStringVowels("kAsra"))
+
+
+// تمرین 7
+
+function minNumber(num){
+    return Math.min(...num)
+}   
+
+console.log(minNumber([50, 63, 22, 47, 85]))
+
