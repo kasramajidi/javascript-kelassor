@@ -82,3 +82,17 @@ function kabiseh(year) {
 
 kabiseh(1960)
 
+// تمرین 6
+
+function testStringVowels(kalmeh){
+    const stringVowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
+
+    for (let i = 0; i < kalmeh.length; i++){
+        if (stringVowels.includes(kalmeh[i])){
+            return true
+        }
+    }
+    return false
+}
+
+console.log(testStringVowels("kAsra"))
