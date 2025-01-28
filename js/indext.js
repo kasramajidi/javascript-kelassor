@@ -43,3 +43,25 @@ function rangeInput (add, range1, range2){
 
 rangeInput(15, 10, 20)
 
+// تمرین 4
+
+function BMI(weight, height){
+
+    const heightMeter = height / 100
+
+    const BMIAvg = weight / (heightMeter ** 2)
+
+    const BMI = Math.round(BMIAvg * 10) / 10
+
+    if (BMI < 18.5){
+        console.log("Underweight")
+    } else if (BMI >= 18.5 && BMI <= 24.9){
+        console.log("Normal weight")
+    }else if (BMI >= 25 && BMI <= 29.9){
+        console.log("Overweight")
+    } else {
+        console.log("Obesity")
+    }
+}
+
+BMI(90, 172)
