@@ -65,3 +65,20 @@ function BMI(weight, height){
 }
 
 BMI(90, 172)
+
+// تمرین 5
+// برحسب سال میلادی
+function kabiseh(year) {
+    if (year % 400 === 0){
+        console.log("سال کبیسه است")
+    }else if (year % 100 === 0){
+        console.log("سال کبیسه نست")
+    }else if (year % 4 === 0){
+        console.log("سال کبیسه است")
+    }else{
+        console.log("سال کبیسه نست")
+    }
+}
+
+kabiseh(1960)
+
