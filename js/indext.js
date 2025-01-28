@@ -1,4 +1,4 @@
-function inputNumber(num){
+function inputNumber(num) {
     if (num <= 1) {
         return console.log("عدد اول نیست");
     }
@@ -14,13 +14,22 @@ inputNumber(17)
 
 // تمرین 2
 
-function inputTime (num) {
-    if (num <= 12){
+function inputTime(num) {
+    if (num < 12) {
         return console.log(num + " AM");
-    } else if (num > 12 && num <= 24){
+    } else if (num === 12) {
+        return console.log(12 + " PM");
+    } else if (num >= 12 && num < 24) {
         const time = num - 12;
-        return console.log( time + " PM");
+        return console.log(time + " PM");
+    } else if (num === 24) {
+        return console.log(0 + " AM");
+    } else {
+        return console.log("لطفا عدد انتخابی بین 0 تا 24 باشه")
     }
 }
 
-inputTime(13)
+inputTime(50)
+
+// تمرین 3
+
