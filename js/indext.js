@@ -1,11 +1,14 @@
 function inputNumber(num){
-    if (num <= 1){
-        return console.log("عدد اول نیست")
-    } else if (num % 2 === 0){
-        return console.log("عدد اول نیست")
-    } else{
-        return console.log("عدد اول است")
+    if (num <= 1) {
+        return console.log("عدد اول نیست");
     }
+    for (let odd = 2; odd < num; odd++) {
+        if (num % odd === 0) {
+            return console.log('عدد اول نیست');
+        }
+    }
+    return console.log('عدد اول است');
 }
 
-inputNumber(3)
+inputNumber(17)
+
