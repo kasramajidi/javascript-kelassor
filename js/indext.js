@@ -106,3 +106,10 @@ function minNumber(num){
 
 console.log(minNumber([50, 63, 22, 47, 85]))
 
+// تمرین 8
+
+function reverses(input){
+    return input.split("").reverse().join("")
+}
+
+console.log(reverses("mani"))
